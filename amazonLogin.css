@@ -1,0 +1,114 @@
+body{
+    align-items: center;
+    font-family: Arial;
+}
+.img{
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+form{
+    border: 1px solid grey;
+    width: 300px;
+    padding-left: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border-color: #a2a6ac;
+    padding-bottom: 10px;
+}
+.sign{
+    font-size: 25px;
+}
+.email{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.in{
+    width: 250px;
+    margin-bottom: 15px;
+    height: 25px;
+}
+.cont{
+    background-color: #f3c550c7;
+    width: 260px;
+    height: 30px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+.cont:hover{
+    cursor: pointer;
+    background-color: #f3c550e5;
+}
+.note{
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+.link{
+    text-decoration: none;
+    color: #0066c0;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.help{
+    font-size: 14px;
+    color: #0066c0;
+    margin-bottom: 0px;
+    display: inline;
+    border: none;
+    background-color: white;
+}
+.help:hover{
+    color: rgb(177, 98, 19);
+    text-decoration: underline;
+}
+.new{
+    display: block;
+    margin: auto;
+    width: 270px;
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.create{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 30px;
+    font-size: 14px;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    width: 280px;
+    text-align: center;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    background-color: #e7e9ec;
+}
+.create:hover{
+    background-color: #e7e9ecb1;
+}
+.new:before {
+    background-color: gray;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 80px;
+    margin: 0;
+}
+.new:after {
+    background-color: gray;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 80px;
+    margin: 0;
+}

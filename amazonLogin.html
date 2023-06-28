@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amazon Login</title>
+    <link rel="stylesheet" href="amazonLogin.css">
+</head>
+<body>
+    <header>
+        <img class="img" src="amazon.png">
+    </header>
+    <form>
+        <p class="sign">Sign in</p>
+        <p class="email">Email or mobile phone number</p>
+        <input class="in" type="text">
+        <button class="cont">Continue</button>
+        <p class="note">By continuing, you agree to Amazon's 
+            <a class="link" href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940"> Condition's of Use </a>
+            and
+            <a class="link" href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=200534380">Privacy Notice.</a>
+        </p>
+        <div id="icon" style="display: inline;">&#9205</div><button class="help" onclick="dropdown()" type="button">Need help?</button>
+        <p id="dropnote" style="margin-top: none;margin-left: 20px;"></p>
+    </form>
+    <footer>
+        <p class="new">New to Amazon</p>
+        <a class="create" href="register.html">Create your Amazon account</a>
+    </footer>
+    
+    <script>
+        function dropdown(){
+            let icon=document.getElementById("icon");
+            let note=document.getElementById("dropnote");
+            if(note.textContent==""){
+                icon.innerHTML="&#9207";
+                note.innerHTML='<a style="display: block; font-size:13px;" class="link" href="https://www.amazon.in/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=inflex&mobileBrowserWeblabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Flog-in%2Fs%3Fk%3Dlog%2Bin%26ref_%3Dnav_ya_signin&prevRID=G7R7APNKPQB0JP6QSTXM&openid.assoc_handle=inflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Forgot Password</a><a href="https://www.amazon.in/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8" style="font-size:13px;" class="link">Other issues with Sign-In';
+            }
+            else{
+                icon.innerHTML="&#9205";
+                note.textContent="";
+            }
+        }
+    </script>
+</body>
+</html>
